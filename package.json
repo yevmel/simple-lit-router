@@ -1,0 +1,18 @@
+{
+   "name": "simple-lit-router",
+   "version": "0.0.1",
+   "description": "Simple router for Lit apps.",
+   "main": "src/index.ts",
+   "scripts": {
+      "router:esbuild-build": "esbuild src/index.ts --bundle --outfile=dist/index.js --legal-comments=none --external:lit --format=cjs --minify",
+      "router:tsc": "tsc"
+   },
+   "author": "Yevgeniy Melnichuk <yevgeniy.melnichuk@googlemail.com>",
+   "dependencies": {
+      "lit": "^2.7.6"
+   },
+   "devDependencies": {
+      "esbuild": "^0.18.15",
+      "typescript": "^5.1.6"
+   }
+}
